@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quando&display=swap');
+
+*{
+    font-family: "Quando";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ #inicio {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(63deg, #352728 51.04%, #8e5d52 51.05%);
+ }
+ 
+ .ajuste__altura {
+    width: 100%;
+ }
+
+ .centralizador {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .apresentacao {
+    color: #fff;
+    font-size: 25px;
+    padding: 25px 0px;
+ }
+
+ .apresentacao span {
+    font-size: 50px;
+    text-transform:initial;
+    font-weight: bold;
+    letter-spacing: 5px;
+ }
+
+ .linkedin__btn {
+    margin-top: 20px;
+    width: 480px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: #8e5d52;
+    border: 0;
+ }
+
+ .linkedin__btn a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+ }
+
+ .linkedin__btn a:hover {
+   color: rgb(225, 237, 53) ;
+   transition:all 0.2s ease-in-out;
+ }
+
+ @keyframes sobe--desce {
+    
+    from {
+        transform: translateY(30px);
+    }
+
+    to {
+        transform: translateY(-30px);
+    }
+ }
+
+ .desenho {
+    animation-duration: 2s;
+    animation-name: sobe--desce;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    height: 400px;
+ }
+
+ .desenho img {
+    width: 100%;
+ }
+
+ /* Sobre Mim */
+
+ #sobre-min {
+   background-color: #493737;
+   padding: 140px ;
+ }
+
+ #sobre-min .desenho-bg img {
+   width: 400px;
+ }
+
+ .sobre-min {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+ }
+
+ .sobre-min .pixel-font {
+   font-family: "Press Start 2P";
+   color: #fff;
+   font-size: 45px;
+ }
+
+ .sobre-min p {
+   margin-top: 20px;
+   font-size: 20px;
+   color: #fff;
+ }
+
+ /* Sobre Min */
+
+
+ /* Projetos */
+
+ #projetos {
+   background-color: #352728;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ #projetos .ajuste__altura {
+   padding: 20px;
+ }
+
+ #projetos .projetos .pixel-font {
+  font-family: "Press Start 2P";
+  color: #fff;
+  font-size: 45px;
+  text-align: center;
+  padding: 100px;
+ }
+
+ /* projetos area */
+
+ #projetos .projetos-itens {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 25px;
+   flex-direction: row;
+ }
+
+ #projetos .pro {
+   display: flex;
+   align-items: center;
+   width: 310px;
+   height: 190px;
+   background-color: #fff;
+   border-radius: 20px;
+   overflow: hidden;
+ }
+
+ #projetos .pro:hover {
+   letter-spacing: 5px;
+   transition: all 0.3s ease-in-out;
+ }
+
+ #projetos .breve {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 50px;
+   background-color: #352728;
+   transform: rotate(-50deg);
+ }
+
+ #projetos .breve p {
+   color: #fff;
+   font-size: 25px;
+   text-transform: uppercase;
+ }
+
+ #projetos .github-link {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin: auto;
+   gap: 35px;
+   padding-top: 35px;
+   padding-bottom: 90px;
+ }
+ #projetos .github-link a {
+   text-decoration: none;
+   color: #fff;
+ }
+
+ #projetos .github-link a:hover {
+   color:rgb(225, 237, 53) ;
+   transition: all 0.3s ease-in-out;
+ }
+
+ #projetos .abrir-projetos--btn {
+   width: 250px;
+   height: 30px;
+   background-color: #493737;
+   border-radius: 15px;
+   border: 0;
+   color: #fff;
+   cursor: pointer;
+ }
+
+ #projetos .abrir-projetos--btn:hover {
+   background-color: #8e5d52;
+   transition: all 0.3s ease-in-out;
+ }
+
+ /* Hablilidades */
+
+ #habilidades {
+  background-color: #493737;
+  padding: 140px ;
+}
+
+ #habilidades .ajuste__altura {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#habilidades h2 {
+  color: #fff;
+  font-size: 45px;
+  font-family: "Press Start 2P";
+  text-align: center;
+}
+
+#habilidades .habilidades-img {
+  margin-top: 80px;
+  width: 500px;
+  height: 250px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+#habilidades .habilidades-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+
+/* Rodapé */
+
+#rodape {
+  background-color: #352728;
+  color: #fff;
+}
+
+#rodape .footer-icon {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer .footer-container {
+
+}
+
+#footer .icons {
+
+
+}
+

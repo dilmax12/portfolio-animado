@@ -5,7 +5,65 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
+  }
+
+  #menu {
+    height: 80px;
+    background-color: #493737;
+    border-bottom: 1px solid #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+  }
+
+  #menu .centralizador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  #menu .menu-space {
+    display: flex;
+    justify-content: space-between;
+    gap: 300px;
+  }
+
+  #menu .logo {
+    display: block;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu .logo img {
+    width:50px;
+  }
+
+  #menu .m-links {
+    display: inline-block;
+    width: 600px;
+  }
+
+  #menu .m-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+  }
+
+  #menu .m-links ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  
+  #menu .m-links ul li a:hover {
+    color: rgb(225, 237, 53);
+  }
 
  #inicio {
     display: flex;
@@ -27,7 +85,7 @@
 
  .apresentacao {
     color: #fff;
-    font-size: 25px;
+    font-size: 23px;
     padding: 25px 0px;
  }
 
@@ -263,18 +321,24 @@
 }
 
 #rodape .footer-icon {
-  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  width: 140px;
+  height: 80px;
+}
+
+#rodape .footer-icon img {
+  width: 60px;
+  height: 60px;
 }
 
 #footer .footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
-#footer .icons {
-
-
-}
 

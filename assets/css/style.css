@@ -452,9 +452,10 @@ padding: 10px;
 
   #projetos .projetos-itens {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 25px;
-    flex-direction: row;
   }
  
   #projetos .pro {

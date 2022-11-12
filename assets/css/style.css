@@ -19,6 +19,7 @@
   }
 
   #menu .centralizador {
+    max-width: 1000px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,7 +67,19 @@
   #menu .m-links ul li a:hover {
     color: rgb(225, 237, 53);
   }
-  /* Menu */
+  /* Menu Oculto */
+
+  .menu-hamburguer {
+    position: absolute;
+    right: 400px;
+    top: 20px;
+    display: none;
+  }
+
+  .menu-img img {
+    width: 40px;
+  }
+
 
   /* Inicio */
 
@@ -361,11 +374,46 @@ padding: 10px;
 
 /* Resposivo Mobile */
 
-@media (min-width:320px) and (max-width: 437px) {
+@media (min-width:320px) and (max-width: 767px) {
 
   #menu {
     display: none;
   }
+
+    /* Menu Oculto */
+
+    .menu-hamburguer {
+      position: fixed;
+      right: 10px;
+      top: 0;
+      z-index: 100;
+      display: none;
+    }
+
+    .menu-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .menu-img img {
+      width: 40px;
+    }
+    
+    .menu-oculto {
+      display: block;
+      width: 150px;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+
+    .menu-oculto ul {
+      list-style: none;
+    }
+
+    .menu-oculto a {
+      text-decoration: none;
+    }
 
   #inicio {
     background:#352728;
@@ -488,19 +536,184 @@ padding: 10px;
   /* Rodapé */
 
 
-#rodape .footer-contatos {
-  padding: 10px;
+  #rodape .footer-contatos {
+    padding: 10px;
+  }
+
+  .icons {
+    display: flex;
+  }
+  #rodape .footer-icon img {
+    width: 40px;
+    height: 40px;
+    padding: 4px 0px;
+  }
+
 }
 
-.icons {
-  display: flex;
-}
-#rodape .footer-icon img {
-  width: 40px;
-  height: 40px;
-  padding: 4px 0px;
-}
+/* Resposivo Tablet */
+
+@media (min-width:768px) and (max-width: 1023px) {
+
+  /* Menu */
+
+  #menu {
+    display: none;
+  }
+
+  #menu .centralizador {
+    max-width: 1000px;
+  }
+
+
+  #menu .menu-space {
+    max-width: 768px;
+  }
+
+  #menu .m-links {
+    width: 400px;
+  }
+
+  #menu .m-links ul {
+    padding: 30px 0px;
+  }
+
+  /* Menu */
+
+  /* Inicio */
+
+  #inicio .centralizador {
+    max-width: 600px;
+    margin-top: 100px;
+  }
+
+  .desenho {
+    width: 400px;
+    height: 270px; 
+  }
+
+  .desenho img {
+    width: 380px;
+  } 
+
+
+ .linkedin__btn {
+    margin-top: 25px;
+    width: 250px;
+  }
+
+  /* Sobre Mim */
+
+  #sobre-min {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0px;
+  }
+
+  #sobre-min .centralizador {
+    height: 600px ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 75px;
+  }
+ 
+  #sobre-min .desenho-bg {
+    height: 400px;
+    margin-bottom: 25px;
+  }
+
+  #sobre-min .desenho-bg img {
+    width: 380px;
+  }
+ 
+  .sobre-min {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+ 
+  .sobre-min .pixel-font {
+    font-family: "Press Start 2P";
+    color: #fff;
+    font-size: 40px;
+  }
+ 
+  .sobre-min p {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #fff;
+  }
+
+
+  /* Projetos */
+ 
+  #projetos .projetos .pixel-font {
+    font-size: 40px;
+    padding: 30px 25px;
+   }
+  
+   /* projetos area */
+ 
+   #projetos .projetos-itens {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 25px;
+   }
+  
+   #projetos .pro {
+     width: 280px;
+   }
+
+   /* Habilidades */
+  
+  #habilidades {
+    padding: 20px ;
+  }
+  
+   #habilidades .ajuste__altura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #habilidades h2 {
+    font-size: 40px;
+  }
+  
+  #habilidades .habilidades-img {
+    margin-top: 25px;
+  }
+
+
+    /* Rodapé */
+
+    #rodape {
+      min-width: 768px;
+    }
+
+    #rodape .centralizador {
+      max-width: 600px;
+    }
+
 
 }
+
+
+@media (min-width:1024px) and (max-width:1440px) {
+
+    /* Inicio */
+
+    #inicio .centralizador {
+      margin-top: 200px;
+    }
+
+}
+
+
+
 
 
